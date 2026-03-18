@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherSky - Premium Weather App</title>
+    <meta name="description" content="A premium weather application showing real-time data for any location.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <main class="container">
+        <header class="header">
+            <h1 class="logo">WeatherSky</h1>
+            <div class="search-box">
+                <input type="text" id="cityInput" placeholder="Enter city name..." autocomplete="off">
+                <button id="searchBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </button>
+            </div>
+            <div class="quick-cities">
+                <button class="city-btn">London</button>
+                <button class="city-btn">New York</button>
+                <button class="city-btn">Tokyo</button>
+                <button class="city-btn">Paris</button>
+            </div>
+        </header>
+
+        <section id="weatherDisplay" class="weather-card hidden">
+            <div class="weather-main">
+                <div class="location-header">
+                    <h2 id="cityName">London, UK</h2>
+                    <p id="currentDate">Wednesday, 18 March</p>
+                </div>
+                <div class="temp-section">
+                    <span id="temperature">15</span><span class="unit">°C</span>
+                    <p id="weatherDesc">Partly Cloudy</p>
+                </div>
+            </div>
+
+            <div class="weather-details">
+                <div class="detail-item">
+                    <span class="label">Humidity</span>
+                    <span id="humidity" class="value">64%</span>
+                </div>
+                <div class="detail-item">
+                    <span class="label">Wind Speed</span>
+                    <span id="windSpeed" class="value">12 km/h</span>
+                </div>
+                <div class="detail-item">
+                    <span class="label">Cloudiness</span>
+                    <span id="clouds" class="value">10%</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="loading" class="loading-container hidden">
+            <div class="spinner"></div>
+            <p>Fetching weather data...</p>
+        </section>
+
+        <section id="error" class="error-container hidden">
+            <p id="errorMsg">Something went wrong. Please try again.</p>
+        </section>
+        
+        <footer class="footer">
+            <p>Data by Open-Meteo</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
