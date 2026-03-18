@@ -2,6 +2,8 @@
 
 WeatherSky is a modern, high-end weather application that provides real-time weather information for any city or country in the world. It features a stunning glassmorphic UI with dynamic background animations and instant location search.
 
+**Live Demo**: [https://zsasannia70-png.github.io/weather-sky/](https://zsasannia70-png.github.io/weather-sky/)
+
 ## ✨ Features
 
 - **Real-Time Data**: Get current temperature, humidity, wind speed, and cloudiness.
