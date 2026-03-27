@@ -1,7 +1,7 @@
 # WeatherSky - Premium Weather Application
 
-![WeatherSky Screenshot](<img width="655" height="856" alt="image" src="https://github.com/user-attachments/assets/80824a9d-5f40-49fb-a7ca-d5a4ee5d1672" />
-)
+<img width="584" height="825" alt="image" src="https://github.com/user-attachments/assets/de617eb0-cb03-40a4-ba20-1a7f04babc8b" />
+
 
 WeatherSky is a modern, high-end weather application that provides real-time weather information for any city or country in the world. It features a stunning glassmorphic UI with dynamic background animations and instant location search.
 
